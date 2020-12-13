@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Haroon">
+	<title>Intelliswift Homepage</title>
+	<link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/65bb6480da.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script>
+		$(document).ready(function () {
+		  $(".navbar-nav li a").click(function(event) {
+			$(".navbar-collapse").collapse('hide');
+		  });
+		});
+  </script>
+  
+  <script>
+	
+    $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".fixed-top");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      var $bg = $(".koiosbg");
+      $bg.toggleClass('koiosscrolled', $(this).scrollTop() > $nav.height())
+    });
+  });
+    </script>
+   
+</head>
+
+
+
+
+<body>
+
+ 
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <a class="navbar-brand" href="index.html"><img src="images/logo1.png" width="100%"   class="img-fluid brandlogo" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ml-auto" style="font-size:0.8em;color:#E4AD77">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">PRODUCT AND PLATFORM ENGINEERING <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-nowrap" href="#">DATA MGMT & ANALYTICS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-nowrap" href="#">DIGITAL ENTERPRISE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-nowrap" href="#">TALENT SOLUTIONS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-nowrap" href="#">SPECIALITY SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-nowrap" href="#">OUR INDUSTRIES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-nowrap" href="#">IP PARTNERSHIPS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-nowrap" href="#">I-DEAS CORNER</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="overlay"></div>
+    <div class="headerbg"></div>
+    <!-- <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="images/Koios-purple-video.mp4" type="video/mp4">
+    </video> -->
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <div class="h2 text-left">
+            <span style="font-weight: 200 !important;color:#E4AD77">Intelliswift's Digital Product Engineering Services - <br></span> 
+            <span style="font-weight:200!important;">Delivering Market Winning Products </span><br>
+            <div class="pt-5">
+              <!-- <div class="row col-md-12 justify-content-center text-center mx-auto" style="width: 100%; border-radius: 25px; ">
+                  <form class="row">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Work Email">
+                  </div>
+                  <span class="text-center text-white btn btn-custom" style="background-color: #55b6c1 !important; width: 240px; border-radius: 25px;">
+                    Connect With Us
+                  </span>
+                </form>
+               </div> -->
+               <span class="text-center text-white btn btn-custom" style="background-color: #E4AD77 !important; width: 240px; border-radius: 25px;">
+                 Learn More
+               </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+ 
+
+  
+  <!--At a Glance-->
+  
+    <section class="intro bg-light p-md-5">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-6">
+           <img src="images/banner.png" class="img-fluid" alt="">
+         </div>
+         <div class="col-md-6 pt-5">
+            <span style="font-weight:300">Intelliswift is a global leader in Digital Product Engineering, Data Management & Analytics, and MSP/VMS Staffing Solutions. Our niche technology SME's across global delivery centers solve complex challenges and deliver valuable insights and solutions that drive greater business value. With customer excellence at the core, Intelliswift is a top service provider, delivering award-winning professional services to over 130+ Fortune 100 and Fortune 500 organizations.</span>
+            
+            <br>
+            <div class="pt-4">
+              <div class="btn btn-custom">
+                <span style="font-weight:500;line-height:25px;">EXPLORE MORE</span>
+              </div>
+            </div>
+        </div>
+       </div>
+     </div>
+    </section>
+
+<!--Counter--> 
+  <section class="jumbotron" style="overflow: hidden !important;background-image: linear-gradient(#F2F2F2, #fff);">
+    <div class="container">
+      <div class="row text-center mx-auto justify-content-center">
+        <div class="col-md-3 pt-3 row">
+         <span class="h1">15+</span>
+         <div>Locations in <br> India and US</div>
+        </div>
+        <div class="col-md-3 pt-3 row">
+          <span class="h1">25+</span>
+          <div>Soltuion <br>Competenices</div>
+        </div>
+        <div class="col-md-3 pt-3 row">
+          <span class="h1">25+</span>
+          <div>Awards and <br>Recognitions</div>
+        </div>
+        <div class="col-md-3 pt-3 row">
+          <span class="h1">124+</span>
+          <div>Fortune 500 <br>Clients</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--Key Offerings-->
+ 
+  <section class="personasbg pb-4" style="overflow: hidden !important;">
+      <div class="container-fluid" >
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="h1 pt-5" style="color:#E4AD77;font-weight:300">
+             Key Offerings
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row pt-5 justify-content-center" style="color:#fff;">
+              <div class="col-md-4">
+                <div class="card" >
+                  <div class="card-body text-center">
+                    <h5 class="card-title h3" style="font-weight:300">Digital Project <br> Engineering</h5>
+                    <p class="card-text pt-3" style="font-weight:200">Intelliswift’s expertise across the Product Development Lifecycle accelerates time-to-market with improved customer experience. With our high-performance teams and comprehensive solutions, organizations gain a competitive edge by leveraging new technologies to drive innovation, manage scalability, and explore new markets.</p>
+                    <a href="#" class="btn btn-custom"><span style="color:#E4AD77">EXPLORE MORE</span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card" >
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-nowrap h3" style="font-weight:300">Data Management <br> & Analytics</h5>
+                    <p class="card-text pt-3" style="font-weight:200">Intelliswift’s Next-Gen Data Management and Smart Analytics enable enterprises with an ROI-driven superior businesses performance. Our industry domain expertise and cutting-edge technologies, empower customers to manage their data and analytics platforms seamlessly.</p>
+                    <a href="#" class="btn btn-custom"><span style="color:#E4AD77">EXPLORE MORE</span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card" >
+                  <div class="card-body text-center">
+                    <h5 class="card-title h3" style="font-weight:300">Talent <br> Solution</h5>
+                    <p class="card-text pt-3" style="font-weight:200">Intelliswift has been an industry leader since 20 years in providing talent to global companies, such as Google, Microsoft, Apple and others. We are an end-to-end talent services providers across all categories viz. MSP, Contingent Workforce, Full time hires, and so on.</p>
+                    <a href="#" class="btn btn-custom"><span style="color:#E4AD77">EXPLORE MORE</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Key Industries -->
+
+  <section class="keyindustriesbg" style="overflow: hidden !important;">
+    <div class="container" >
+      <div class="row">
+        <div class="col-md-6 text-center mr-auto">
+					<div class="h1 pt-5">
+            <span style="color:#E5AD74;font-weight:300">Key Industries</span>
+            <br>
+            <span style="color:#15183B;font-weight:300;font-size:0.75em">Diverse Requirements - Similar Goal</span>
+          </div>
+          <div class="row pb-5 pt-5 mx-auto text-left">
+            <div data-aos="fade-left" data-aos-duration="1400" class="col-md-12 p-2">
+              <div style="width: 100%;  border-radius: 25px;"><span class="text-center text-dark btn btn-blue-custom px-5" style="width: 200px;" >PHARMA</span></div>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="1400" class="col-md-12 p-2">
+              <div style="width: 100%;  border-radius: 25px;"><span class="text-center text-dark btn btn-blue-custom px-5" style="width: 200px;" >BFSI</span></div>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="1400" class="col-md-12 p-2">
+              <div style="width: 100%;  border-radius: 25px;"><span class="text-center text-dark btn btn-blue-custom px-5" style="width: 200px;" >TECHNOLOGY</span></div>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="1400" class="col-md-12 p-2">
+              <div style="width: 100%;  border-radius: 25px;"><span class="text-center text-dark btn btn-blue-custom px-5" style="width: 200px;" >OTHERSs</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Thought Leadership-->
+
+  <section class="leadershipbg" style="overflow: hidden !important;">
+    <div class="container-fluid" >
+      <div class="row">
+        <div class="col-md-12 text-center">
+					<div class="h1 pt-5">
+           <span style="color:#EDBD96;font-weight:300">Thought Leadership Blog</span>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="row pt-5 justify-content-center" style="color:#fff">
+            <div class="col-md-4">
+              <div class="card" >
+                <div class="card-body text-center">
+                  <img class="pb-4" src="images/LEADER_1.png" width="150"/>
+                  <h5 class="card-title h3" style="font-weight:400;font-size:1em">Empowering Enterprises with <br> Actionable Insights</h5>
+                  <p class="card-text pt-3" style="font-weight:200;font-size:0.9em">- by Ramki Sundararaman <br> VP of Data & BI</p>
+                  <a href="#" style="border:none!important;color:#E4AD77">READ MORE</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card" >
+                <div class="card-body text-center">
+                  <img class="pb-4" src="images/LEADER_2.png" width="150"/>
+                  <h5 class="card-title text-nowrap h3" style="font-weight:400;font-size:1em">COVID 19- Plan Your Self <br> Learning</h5>
+                  <p class="card-text pt-3" style="font-weight:200;font-size:0.9em">- by Sanketh Krishnappa<br> Director. Digital Transformation</p>
+                  <a href="#" style="border:none!important;color:#E4AD77">READ MORE</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card" >
+                <div class="card-body text-center">
+                  <img class="pb-4" src="images/LEADER_3.png" width="150"/>
+                  <h5 class="card-title h3" style="font-weight:400;font-size:1em">ABM and Its Relevance in The <br> Post COVID Era</h5>
+                  <p class="card-text pt-3" style="font-weight:200;font-size:0.9em">- by Nivedita Chakraborty <br> Director. Marketing</p>
+                  <a href="#" style="border:none!important;color:#E4AD77">READ MORE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Case Studies-->
+
+  <section class="casestudybg pb-5" style="overflow: hidden !important;">
+    <div class="container-fluid" >
+      <div class="row ">
+        <div class="col-md-12 text-center pt-5" style="padding-left:5%!important;padding-right:5%!important">
+					<div class="h1 pt-3">
+           <span style="color:#E9B77E;font-weight:300;font-size:0.9em">Case Studies - Our Value Outcomes</span>
+          </div>
+        </div>
+        <div class="row pt-5  pb-lg-5 justify-content-center" style="padding-left:15%!important;padding-right:15%!important">
+          <div class="col-md-4 pt-lg-5 pb-lg-5">
+            <div class="card casestudy-img-1 " >
+              <div class="card-body text-left">
+                <!-- <h5 class="card-title h3">Digital Project <br> Engineering</h5> -->
+                <p class="card-text pt-3" style="font-size:1.1em;color:#fff;font-weight:300;width:60%">Fastest Growing Commodity Exchange in South Asia Gets Facelift with CMS-Based Website</p>
+                <a href="#" class="btn btn-custom" style="border-width:1px;color:#E4AD77">READ MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 pt-lg-5 pb-lg-5">
+            <div class="card casestudy-img-2" >
+              <div class="card-body text-left ">
+                <!-- <h5 class="card-title text-nowrap h3" style="color:#15183B;">Data Management <br> & Analytics</h5> -->
+                <p class="card-text pt-3" style="font-size:1.1em;color:#15183B;width:60%">Largest Private Sector Bank Implements Chat Application for Customer Support Center</p>
+                <a href="#" class="btn btn-custom" style="border-color:#15183B;border-width:1px;color:#15183B">READ MORE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 pt-lg-5 pb-lg-5">
+            <div class="card casestudy-img-2" >
+              <div class="card-body text-left">
+                <!-- <h5 class="card-title h3">Talent <br> Solution</h5> -->
+                <p class="card-text pt-3" style="font-size:1.1em;color:#15183B;width:60%">Oklahoma Based Title Insurance Company Reaches to Customers Through Mobile CRM</p>
+                <a href="#" class="btn btn-custom" style="border-color:#15183B;border-width:1px;color:#15183B">READ MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--News-->
+
+  <section style="overflow: hidden !important;padding-bottom:4%!important">
+    <div class="container" >
+      <div class="row">
+        <div class="col-md-12 text-center mx-auto">
+					<div class="h1 pt-5">
+           <span style="font-weight:300;color:#E9B77E">News</span>
+          </div>
+        </div>
+        <div class="row pt-5 mx-auto justify-content-center">
+          <div class="col-md-4">
+            <div class="card" >
+              <div class="card-title news-1">
+                <span class="pl-4" style="color:#fff;font-size:0.9em;line-height:60px;font-weight:500">OCT 28, 2020</span>
+              </div>
+              <div class="card-body text-left" style="border:1px solid #E9E9E9">
+                <p class="card-text" style="font-weight:600;font-size:0.9em;color:#15183B">INTELLISWIFT LAUNCHES CLOUD ADOPTION NAVIGATOR FRAMEWORK, 'ICAN'</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" >
+              <div class="card-title news-2">
+                <span class="pl-4" style="color:#fff;font-size:0.9em;line-height:60px;font-weight:500">AUG 25, 2020</span>
+              </div>
+              <div class="card-body text-left" style="border:1px solid #E9E9E9">
+                <p class="card-text" style="font-weight:600;font-size:0.9em;color:#15183B">INTELLISWIFT CONGRATULATES ITS CHAMPION LINKEDIN-CERTIFIES RECRUITERS</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" >
+              <div class="card-title news-3">
+                <span class="pl-4" style="color:#fff;font-size:0.9em;line-height:60px;font-weight:500">JUL 15, 2020</span>
+              </div>
+              <div class="card-body text-left" style="border:1px solid #E9E9E9">
+                <p class="card-text" style="font-weight:600;font-size:0.9em;color:#15183B">INTELLISWIFT - AMONG THE TOP 5 TECHNOLOGY COMPANIES ON LABJ'S LARGEST MINORITY - OWNED BUSINESS LIST 2020</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--about us-->
+
+  <!-- <section class="p-5" data-aos="fade-down" data-aos-duration="1400" >
+    <div class="aboutus bg-light container" >
+      <div class="row text-center">
+        <div class="col-md-12 h1" style="color: #55b6c1 !important">
+          about us
+        </div>
+        <div class="col-md-12 text-justify p-3">
+          At Intelliswift, we are leaders in delivering Digital Product Engineering, Data Management & Analytics, and Talent Solutions 
+          to enable more innovative and efficient businesses. Our strategic global locations and delivery centers are home to multidisciplinary 
+          teams of technology experts who partner with clients to solve today’s most complex challenges and deliver valuable insights, solutions, 
+          and results that impact their business positively. With customer excellence at the core, Intelliswift has established itself as a top service 
+          provider, delivering award-winning professional services to over 130+ Fortune 100 and Fortune 500 organizations.
+        </div>
+        <div class="col-md-12 text-center mx-auto" >
+          <div class="btn btn-warning px-5 py-2">
+            learn more
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+<!-- Footer-->
+<footer class="page-footer " style=" background-image: linear-gradient(to right, #5091a3,#304a69, #304a69);">
+  <div class="container-fluid pl-md-5 pt-3 pt-sm-5 pb-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="footleft">
+                <a href="/">
+                    <img src="images/logo1.png" alt="">
+                </a>
+                <p class="text-white">Intelliswift 2020. All Rights Reserved</p>
+                <div class="footsocials row w-auto">
+                    <ul class="social-network">
+                        <li>
+                            <a href="https://www.facebook.com/IntelliswiftSoftware" target="_blank" data-placement="bottom" title="" data-original-title="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/intelliswiftS" target="_blank" data-placement="bottom" title="" data-original-title="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/intelliswift" target="_blank" data-placement="bottom" title="" data-original-title="Linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      <div class="row col-md-8 text-white">
+        <div class="col-sm p-3">
+          <h3>Information</h3>
+          <div onclick="location.href='newurl.html'" style="cursor: pointer;">About Us</div>
+          <div onclick="location.href='newurl.html'" style="cursor: pointer;">Careers</div>
+          <div onclick="location.href='newurl.html'" style="cursor: pointer;">Contact Us</div>
+        </div>
+        <div class="col-sm p-3">
+          <h3>Service</h3>
+          <div onclick="location.href='newurl.html'" style="cursor: pointer;">Product Engineering</div>
+          <div onclick="location.href='newurl.html'" style="cursor: pointer;">IT Services</div>
+        </div>
+        <div class="col-sm p-3">
+          <h3>Support</h3>
+          <div onclick="location.href='newurl.html'" style="cursor: pointer;">Disclaimer</div>
+          <div onclick="location.href='newurl.html'" style="cursor: pointer;">Privacy Policy</div>
+          <div onclick="location.href='newurl.html'" style="cursor: pointer;">Internal Announcements</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+ 
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
