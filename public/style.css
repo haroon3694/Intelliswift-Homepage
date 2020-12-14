@@ -30,14 +30,10 @@ header .container {
   z-index: 2;
 }
 
-/* .headerbg{
-  background-image: url("images/home-banner.png");
-  height: 100vh; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #000 !important;
-} */
+.navbar-toggler{
+  background-color: white !important;
+}
+
 header .overlay {
   background-image: url("images/home-banner.png");
   background-position: center;
@@ -94,13 +90,23 @@ a.nav-link{
   color: white !important;
 }
 
+.nav-tabs{
+  border: none !important;
+}
+
 .navbar-nav .active>.nav-link{
   color: #E4AD77 !important;
   font-weight: 500 !important;
 }
 
+.nav-link:hover{
+  color: #E4AD77 !important;
+  font-weight: 500 !important;
+}
+
 .brandlogo{
-  max-width: 400px !important;
+  max-width: 150px !important;
+  min-width: 150px !important;
 }
 
 
@@ -113,15 +119,6 @@ a.nav-link{
   text-align: center;
   width: 100%;
   z-index: 99 !important;
-}
-
-.koiosbg{
-  background-image: url("images/banner.png");
-  height: 50vh; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #000 !important;
 }
 
 .scrolled {
@@ -157,8 +154,17 @@ a.nav-link{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: auto;
   
 }
+
+.banner{
+  position: absolute !important;
+  left: 25%;
+  top: 10%;
+  max-width: 500px !important;
+}
+
 .simplifyoverlay{
   position: absolute;
   top: 30%;
@@ -280,13 +286,24 @@ a.nav-link{
   border-width:2px;
 }
 .btn-blue-custom{
-  height: 40px !important;
+  height: auto!important;
   background-color: transparent !important;
   border: 1px solid #1A1E39;
   border-radius: 0px !important;
   border-width:2px;
   color:#1A1E39 !important;
 }
+
+
+.insidebtn:hover{
+  color: white !important;
+  background-color:#1A1E39 !important;
+  padding: 18px !important;
+}
+
+
+
+
 .btn-primary{
   background-color: white !important;
   border: none !important;
@@ -315,10 +332,11 @@ form{
 
 .keyindustriesbg{
   background-image: url("images/keyIndustries.png");
-  height: 100vh; 
+  height: auto; 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #ced0d0 !important;
 }
 
 .leadershipbg{
@@ -503,13 +521,23 @@ ul{
 }
 
 @media only screen and (min-width: 1200px){
-  .koiosbg{
-    background-image: url("images/banner.png");
-    height: 100vh; 
+
+  .intro{
+    background-image: url("images/AT.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 90vh;
+    
   }
+  
+  .banner{
+    position: absolute !important;
+    left: 15%;
+    top: 15%;
+    max-width: 700px !important;
+  }
+  
   
 }
 
