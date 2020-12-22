@@ -14,6 +14,8 @@
     <script src="https://kit.fontawesome.com/65bb6480da.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 	<script>
 		$(document).ready(function () {
 		  $(".navbar-nav li a").click(function(event) {
@@ -33,6 +35,20 @@
     });
   });
     </script>
+
+    <script>
+          
+$(function () { 
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 5) { 
+            $('.navbar .navbar-brand img').attr('src','images/logo.png');
+        }
+        if ($(this).scrollTop() < 5) { 
+            $('.navbar .navbar-brand img').attr('src','images/logo-white.png');
+        }
+    })
+});
+    </script>
    
 </head>
 
@@ -44,36 +60,37 @@
  
 
   <header>
-    <nav class="navbar navbar-expand-xl navbar-light fixed-top">
-      <a class="navbar-brand" href="index.html"><img src="images/logo1.png" width="100%"   class="img-fluid brandlogo" alt=""></a>
+    <nav class="navbar px-md-5 navbar-expand-lg navbar-light fixed-top">
+      <a class="navbar-brand" href="index.html"><img src="images/logo-white.png" width="100%"  class="img-fluid brandlogo px-2" alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav ml-auto" style="font-size:0.8em;color:#E4AD77">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">PRODUCT AND PLATFORM ENGINEERING <span class="sr-only">(current)</span></a>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Technology Solutions
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Product and Platform Engineering</a>
+              <a class="dropdown-item" href="#">Data Management and Analytics</a>
+              <a class="dropdown-item" href="#">Digital Enterprise</a>
+            </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-nowrap" href="#">DATA MGMT & ANALYTICS</a>
+            <a class="nav-link text-nowrap" href="#">Talent Solutions</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-nowrap" href="#">DIGITAL ENTERPRISE</a>
+            <a class="nav-link text-nowrap" href="#">Speciality Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-nowrap" href="#">TALENT SOLUTIONS</a>
+            <a class="nav-link text-nowrap" href="#">Our Industries</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-nowrap" href="#">SPECIALITY SERVICES</a>
+            <a class="nav-link text-nowrap" href="#">IP Partnerships</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-nowrap" href="#">OUR INDUSTRIES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-nowrap" href="#">IP PARTNERSHIPS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-nowrap" href="#">I-DEAS CORNER</a>
+            <a class="nav-link text-nowrap" href="#">I-DEAS Corner</a>
           </li>
         </ul>
       </div>
@@ -81,7 +98,7 @@
     <div class="overlay"></div>
     <div class="headerbg"></div>
     <div class="container h-100">
-      <div class="d-flex h-100 text-center align-items-center">
+      <div class="d-flex h-100 text-center align-items-center" style="position: relative !important;">
         <div class="w-100 text-white">
           <div class="h2 text-left">
             <span style="font-weight: 200 !important;color:#E4AD77">Intelliswift's Digital Product Engineering Services - <br></span> 
@@ -94,6 +111,16 @@
           </div>
         </div>
       </div>
+      <div class="row mx-auto text-center mobilehide">
+        <div class="scroll-txt">
+          <div class="chev">
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <span class="text">Scroll to Explore</span>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -102,18 +129,18 @@
   
   <!--At a Glance-->
   
-    <section class="intro bg-light p-5" style="position: relative !important;">
+    <section class="intro bg-light p-5" style="position: relative !important; overflow-x: hidden !important;">
      <div class="container">
        <div class="row">
          <div class="col-md-7">
            <img src="images/banner.png" class="img-fluid banner mobilehide" alt="">
          </div>
-         <div data-aos="fade-left" data-aos-duration="1000" class="col-md pt-md-5 mt-md-5">
+         <div data-aos="fade-left" data-aos-duration="1000" class="col-md atglancetext text-justify">
             <span style="font-weight:300">Intelliswift is a global leader in Digital Product Engineering, Data Management & Analytics, and MSP/VMS Staffing Solutions. Our niche technology SME's across global delivery centers solve complex challenges and deliver valuable insights and solutions that drive greater business value. With customer excellence at the core, Intelliswift is a top service provider, delivering award-winning professional services to over 130+ Fortune 100 and Fortune 500 organizations.</span>
             <br>
             <div class="pt-4">
               <div class="btn btn-custom">
-                <span style="font-weight:500;line-height:25px;">EXPLORE MORE</span>
+                <span style="font-weight:500;line-height:25px;">Explore More</span>
               </div>
             </div>
         </div>
@@ -163,8 +190,8 @@
                 <div class="card">
                   <div class="card-body text-center">
                     <h5 class="card-title h3" style="font-weight:300">Digital Project <br> Engineering</h5>
-                    <p class="card-text text-justify pt-3" style="font-weight:200">Intelliswift’s expertise across the Product Development Lifecycle accelerates time-to-market with improved customer experience. With our high-performance teams and comprehensive solutions, organizations gain a competitive edge by leveraging new technologies to drive innovation, manage scalability, and explore new markets.</p>
-                    <a href="#" class="btn btn-custom"><span style="color:#E4AD77">EXPLORE MORE</span></a>
+                    <p class="card-text text-justify pt-3" style="font-weight:200; height: 250px;">Intelliswift’s expertise across the Product Development Lifecycle accelerates time-to-market with improved customer experience. With our high-performance teams and comprehensive solutions, organizations gain a competitive edge by leveraging new technologies to drive innovation, manage scalability, and explore new markets.</p>
+                    <a href="#" class="btn btn-custom"><span style="color:#E4AD77">Explore More</span></a>
                   </div>
                 </div>
               </div>
@@ -172,8 +199,8 @@
                 <div class="card" >
                   <div class="card-body text-center">
                     <h5 class="card-title text-nowrap h3" style="font-weight:300">Data Management <br> & Analytics</h5>
-                    <p class="card-text text-justify pt-3" style="font-weight:200">Intelliswift’s Next-Gen Data Management and Smart Analytics enable enterprises with an ROI-driven superior businesses performance. Our industry domain expertise and cutting-edge technologies, empower customers to manage their data and analytics platforms seamlessly.</p>
-                    <a href="#" class="btn btn-custom"><span style="color:#E4AD77">EXPLORE MORE</span></a>
+                    <p class="card-text text-justify pt-3" style="font-weight:200; height: 250px;">Intelliswift’s Next-Gen Data Management and Smart Analytics enable enterprises with an ROI-driven superior businesses performance. Our industry domain expertise and cutting-edge technologies, empower customers to manage their data and analytics platforms seamlessly.</p>
+                    <a href="#" class="btn btn-custom"><span style="color:#E4AD77">Explore More</span></a>
                   </div>
                 </div>
               </div>
@@ -181,8 +208,8 @@
                 <div class="card">
                   <div class="card-body text-center">
                     <h5 class="card-title h3" style="font-weight:300">Talent <br> Solution</h5>
-                    <p class="card-text text-justify pt-3" style="font-weight:200">Intelliswift has been an industry leader since 20 years in providing talent to global companies, such as Google, Microsoft, Apple and others. We are an end-to-end talent services providers across all categories viz. MSP, Contingent Workforce, Full time hires, and so on.</p>
-                    <a href="#" class="btn btn-custom"><span style="color:#E4AD77">EXPLORE MORE</span></a>
+                    <p class="card-text text-justify pt-3" style="font-weight:200; height: 250px;">Intelliswift has been an industry leader since 20 years in providing talent to global companies, such as Google, Microsoft, Apple and others. We are an end-to-end talent services providers across all categories viz. MSP, Contingent Workforce, Full time hires, and so on.</p>
+                    <a href="#" class="btn btn-custom"><span style="color:#E4AD77">Explore More</span></a>
                   </div>
                 </div>
               </div>
@@ -195,7 +222,7 @@
   <!-- Key Industries -->
 
   <section class="keyindustriesbg" style="overflow: hidden !important;">
-    <div class="container-fluid py-5" >
+    <div class="container-fluid mr-auto py-5" >
       <div class="row flex-column">
         <div class="col-md-8 text-center">
 					<div data-aos="fade-right" data-aos-duration="1000" class="h1 pt-5">
@@ -204,60 +231,67 @@
             <span style="color:#15183B;font-weight:300;font-size:0.75em">Diverse Requirements - Similar Goal</span>
           </div>
         </div>
-        <div class="row justify-content-center mx-auto text-center">
-          <div class="col-md pl-md-5">
-            <ul class="nav nav-tabs flex-column py-5">
-              <li data-aos="fade-left" data-aos-duration="1000" class="nav-item p-2">
-                <div class="btn btn-blue-custom active" id="pharma-tab" data-toggle="tab" href="#pharma" role="tab" aria-controls="pharma" aria-selected="true" style="width: 200px; border-radius: 25px;"><span class="text-center text-dark insidebtn ">PHARMA</span></div>
-              </li>
-              <li data-aos="fade-left" data-aos-duration="1100" class="nav-item p-2">
-                <div class="btn btn-blue-custom " id="bfsi-tab" data-toggle="tab" href="#bfsi" role="tab" aria-controls="bfsi" aria-selected="false" style="width: 200px; border-radius: 25px;"><span class="text-center text-dark insidebtn">BFSI</span></div>
-              </li>
-              <li data-aos="fade-left" data-aos-duration="1200" class="nav-item p-2">
-                <div class="btn btn-blue-custom " id="tech-tab" data-toggle="tab" href="#tech" role="tab" aria-controls="tech" aria-selected="false" style="width: 200px; border-radius: 25px;"><span class="text-center text-dark insidebtn">TECHNOLOGY</span></div>
-              </li>
-              <li data-aos="fade-left" data-aos-duration="1300" class="nav-item p-2">
-                <div class="btn btn-blue-custom " id="others-tab" data-toggle="tab" href="#others" role="tab" aria-controls="others" aria-selected="false" style="width: 200px; border-radius: 25px;"><span class="text-center text-dark insidebtn">OTHERS</span></div>
-              </li>
-            </ul>
+        
+      </div>
+      <div class="row py-5">
+        <div class="col-md-3 pl-md-5 pt-3">
+          <ul class="nav nav-tabs flex-column">
+            <li data-aos="fade-left" data-aos-duration="1000" class="nav-item py-2">
+              <div class="btn btn-blue-custom active p-2" id="pharma-tab" data-toggle="tab" href="#pharma" role="tab" aria-controls="pharma" aria-selected="true" style="width: 200px; border-radius: 25px;"><span class="text-center text-dark insidebtn">Pharma</span></div>
+            </li>
+            <li data-aos="fade-left" data-aos-duration="1100" class="nav-item py-2">
+              <div class="btn btn-blue-custom p-2" id="bfsi-tab" data-toggle="tab" href="#bfsi" role="tab" aria-controls="bfsi" aria-selected="false" style="width: 200px; border-radius: 25px;"><span class="text-center text-dark insidebtn">BFSI</span></div>
+            </li>
+            <li data-aos="fade-left" data-aos-duration="1200" class="nav-item py-2">
+              <div class="btn btn-blue-custom p-2" id="tech-tab" data-toggle="tab" href="#tech" role="tab" aria-controls="tech" aria-selected="false" style="width: 200px; border-radius: 25px;"><span class="text-center text-dark insidebtn">Technology</span></div>
+            </li>
+            <li data-aos="fade-left" data-aos-duration="1300" class="nav-item py-2">
+              <div class="btn btn-blue-custom p-2" id="others-tab" data-toggle="tab" href="#others" role="tab" aria-controls="others" aria-selected="false" style="width: 200px; border-radius: 25px;"><span class="text-center text-dark insidebtn">Others</span></div>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content text-left col-md-5" id="myTabContent">
+          <div class="tab-pane fade show active text-justify " id="pharma" role="tabpanel" aria-labelledby="pharma-tab">
+            <h1>
+              PHARMA
+            </h1>
+            <p>
+              The global pharmaceutical sector has undergone enormous changes in the past 10 years and stands at an inflection point. New technologies have greatly increased the speed of R&D, leading to increased competition and alternatives.<br>
+              <a class="ref" href="">Read More</a>
+            </p>
           </div>
-          <div class="tab-content text-left col-md-8 pt-4" id="myTabContent">
-            <div class="tab-pane fade show active w-50" id="pharma" role="tabpanel" aria-labelledby="pharma-tab">
-              <h1>
-                PHARMA
-              </h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis possimus maxime dolor expedita excepturi ab debitis nisi doloremque consectetur quos totam magni rerum eum, odit illum quidem quam commodi ipsum.
-              </p>
-            </div>
-            <div class="tab-pane fade w-50" id="bfsi" role="tabpanel" aria-labelledby="bfsi-tab">
-              <h1>
-                BFSI
-              </h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis possimus maxime dolor expedita excepturi ab debitis nisi doloremque consectetur quos totam magni rerum eum, odit illum quidem quam commodi ipsum.
-              </p>
-            </div>
-            <div class="tab-pane fade w-50" id="tech" role="tabpanel" aria-labelledby="tech-tab">
-              <h1>
-                TECHNOLOGY
-              </h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis possimus maxime dolor expedita excepturi ab debitis nisi doloremque consectetur quos totam magni rerum eum, odit illum quidem quam commodi ipsum.
-              </p>
-            </div>
-            <div class="tab-pane fade w-50" id="others" role="tabpanel" aria-labelledby="others-tab">
-              <h1>
-                Others
-              </h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis possimus maxime dolor expedita excepturi ab debitis nisi doloremque consectetur quos totam magni rerum eum, odit illum quidem quam commodi ipsum.
-              </p>
-            </div>
+          <div class="tab-pane fade text-justify pr-5 " id="bfsi" role="tabpanel" aria-labelledby="bfsi-tab">
+            <h1>
+              BFSI
+            </h1>
+            <p>
+              The financial industry has long valued big data, streaming data, data science, data analytics as well as end-to-end data management. New growth and revenue opportunities are emerging for BFSI that are moving faster than the competition.<br>
+              <a class="ref" href="">Read More</a>
+            </p>
+          </div>
+          <div class="tab-pane fade text-justify pr-5 " id="tech" role="tabpanel" aria-labelledby="tech-tab">
+            <h1>
+              TECHNOLOGY
+            </h1>
+            <p>
+              Intelliswift’s unique solutions are secure, scalable and modern – designed to deliver value, accelerate your digital transformation and reduce costs. Learn more about our digital transformation accelerators such as Koios, iCan and Conversion Factory+. <br>
+              <a class="ref" href="">Read More</a>
+            </p>
+          </div>
+          <div class="tab-pane fade text-justify pr-5 " id="others" role="tabpanel" aria-labelledby="others-tab">
+            <h1>
+              Others
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis possimus maxime dolor expedita excepturi ab debitis nisi doloremque consectetur quos totam magni rerum eum, odit illum quidem quam commodi ipsum.
+            </p>
           </div>
         </div>
       </div>
     </div>
+   
+     
+    
     
   </section>
 
@@ -278,8 +312,8 @@
                 <div class="card-body text-center">
                   <img class="pb-4 img-fluid" width="200px" src="images/LEADER_1.png" />
                   <h5 class="card-title h3" style="font-weight:400;font-size:1em">Empowering Enterprises with <br> Actionable Insights</h5>
-                  <p class="card-text" style="font-weight:200;font-size:0.9em">- by Ramki Sundararaman <br> VP of Data & BI</p>
-                  <a href="#" style="border:none!important;color:#E4AD77">READ MORE</a>
+                  <p class="card-text" style="font-weight:200;font-size:0.9em">- by Ramki Sundararaman <br> VP, Data & BI</p>
+                  <a href="#" style="border:none!important;color:#E4AD77">Read More</a>
                 </div>
               </div>
             </div>
@@ -288,8 +322,8 @@
                 <div class="card-body text-center">
                   <img class="pb-4 img-fluid" width="200px" src="images/LEADER_2.png" />
                   <h5 class="card-title text-nowrap h3" style="font-weight:400;font-size:1em">COVID 19- Plan Your Self <br> Learning</h5>
-                  <p class="card-text" style="font-weight:200;font-size:0.9em">- by Sanketh Krishnappa<br> Director. Digital Transformation</p>
-                  <a href="#" style="border:none!important;color:#E4AD77">READ MORE</a>
+                  <p class="card-text" style="font-weight:200;font-size:0.9em">- by Sanketh Krishnappa<br> Director, Digital Transformation</p>
+                  <a href="#" style="border:none!important;color:#E4AD77">Read More</a>
                 </div>
               </div>
             </div>
@@ -298,8 +332,8 @@
                 <div class="card-body text-center">
                   <img class="pb-4 img-fluid" width="200px" src="images/LEADER_3.png" />
                   <h5 class="card-title h3" style="font-weight:400;font-size:1em">ABM and Its Relevance in The <br> Post COVID Era</h5>
-                  <p class="card-text" style="font-weight:200;font-size:0.9em">- by Nivedita Chakraborty <br> Director. Marketing</p>
-                  <a href="#" style="border:none!important;color:#E4AD77">READ MORE</a>
+                  <p class="card-text" style="font-weight:200;font-size:0.9em">- by Nivedita Chakraborty <br> Director, Marketing</p>
+                  <a href="#" style="border:none!important;color:#E4AD77">Read More</a>
                 </div>
               </div>
             </div>
@@ -319,28 +353,28 @@
            <span style="color:#E4AD77;font-weight:300;font-size:0.9em">Case Studies - Our Value Outcomes</span>
           </div>
         </div>
-        <div class="row px-md-5 pb-md-5 justify-content-center" >
+        <div class="row px-md-5 pb-md-5 mx-auto justify-content-center" >
           <div data-aos="fade-down" data-aos-duration="1000" class="col-md-4 pt-lg-5 pb-lg-5">
-            <div class="card casestudy-img-1 " style="height: 250px !important;">
+            <div class="card cscard casestudy-img-1 ">
               <div class="card-body text-left">
                 <p class="card-text pt-3" style="font-size:1.1em;color:#fff;font-weight:300;width:80%">Fastest Growing Commodity Exchange in South Asia Gets Facelift with CMS-Based Website</p>
-                <a href="#" class="btn btn-custom" style="border-width:1px;color:#E4AD77">READ MORE</a>
+                <a href="#" class="btn btn-custom" style="border-width:1px;color:#E4AD77">Read More</a>
               </div>
             </div>
           </div>
           <div data-aos="fade-down" data-aos-duration="1000" class="col-md-4 pt-lg-5 pb-lg-5">
-            <div class="card casestudy-img-2" style="height: 250px !important;" >
+            <div class="card cscard casestudy-img-2" >
               <div class="card-body text-left ">
                 <p class="card-text pt-3" style="font-size:1.1em;color:#15183B;width:80%">Largest Private Sector Bank Implements Chat Application for Customer Support Center</p>
-                <a href="#" class="btn btn-custom" style="border-color:#15183B;border-width:1px;color:#15183B">READ MORE</a>
+                <a href="#" class="btn btn-custom" style="border-color:#15183B;border-width:1px;color:#15183B">Read More</a>
               </div>
             </div>
           </div>
           <div data-aos="fade-down" data-aos-duration="1000" class="col-md-4 pt-lg-5 pb-lg-5">
-            <div class="card casestudy-img-2" style="height: 250px !important;" >
+            <div class="card cscard casestudy-img-2" >
               <div class="card-body text-left">
                 <p class="card-text pt-3" style="font-size:1.1em;color:#15183B;width:80%">Oklahoma Based Title Insurance Company Reaches to Customers Through Mobile CRM</p>
-                <a href="#" class="btn btn-custom" style="border-color:#15183B;border-width:1px;color:#15183B">READ MORE</a>
+                <a href="#" class="btn btn-custom" style="border-color:#15183B;border-width:1px;color:#15183B">Read More</a>
               </div>
             </div>
           </div>
@@ -352,48 +386,96 @@
   <!--News-->
 
   <section style="overflow: hidden !important;padding-bottom:4%!important">
-    <div class="container" >
-      <div class="row">
-        <div class="col-md-12 text-center mx-auto">
-					<div data-aos="fade-right" data-aos-duration="1000" class="h1 pt-5">
-           <span style="font-weight:300;color:#E9B77E">News</span>
-          </div>
-        </div>
-        <div class="row pt-5 mx-auto justify-content-center">
-          <div data-aos="flip-up" data-aos-duration="1000" class="col-md-4">
-            <div class="card" style="height: 370px;" >
-              <div class="card-title news-1">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center mx-auto">
+      <div data-aos="fade-right" data-aos-duration="1000" class="h1 pt-5">
+       <span style="font-weight:300;color:#E9B77E">News</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <div class="row  mx-auto justify-content-center" >
+      <div class="owl-carousel">
+        <div>
+          <div data-aos="fade-down" data-aos-duration="1000" class="col-md-4 pt-lg-5 pb-lg-5">
+            <div class="card newscard" style="width: 20rem;height: 300px; border-radius: 15px !important; border: 1px solid #e9e9e9;" >
+              <div class="card-title news-1" style="border-top-right-radius: 15px !important; border-top-left-radius: 15px !important">
                 <span class="pl-4" style="color:#fff;font-size:0.9em;line-height:60px;font-weight:500">OCT 28, 2020</span>
               </div>
-              <div class="card-body text-left" style="border:1px solid #E9E9E9">
-                <p class="card-text" style="font-weight:600;font-size:0.9em;color:#15183B">INTELLISWIFT LAUNCHES CLOUD ADOPTION NAVIGATOR FRAMEWORK, 'ICAN'</p>
+              <div class="card-body text-left">
+                <p class="card-text" style="font-weight:600;font-size:0.9em;color:#15183B">Intelliswift launches cloud adoption navigator framework, 'ICAN'</p>
+                <a class="ref" href="">Read More</a>
               </div>
             </div>
           </div>
-          <div data-aos="flip-up" data-aos-duration="1200" class="col-md-4">
-            <div class="card" style="height: 370px;" >
-              <div class="card-title news-2">
+        </div>
+        <div>
+          <div data-aos="fade-down" data-aos-duration="1000" class="col-md-4 pt-lg-5 pb-lg-5">
+            <div class="card newscard" style="width: 20rem;height: 300px; border-radius: 15px !important; border: 1px solid #e9e9e9;" >
+              <div class="card-title news-2" style="border-top-right-radius: 15px !important; border-top-left-radius: 15px !important">
                 <span class="pl-4" style="color:#fff;font-size:0.9em;line-height:60px;font-weight:500">AUG 25, 2020</span>
               </div>
-              <div class="card-body text-left" style="border:1px solid #E9E9E9">
-                <p class="card-text" style="font-weight:600;font-size:0.9em;color:#15183B">INTELLISWIFT CONGRATULATES ITS CHAMPION LINKEDIN-CERTIFIES RECRUITERS</p>
+              <div class="card-body text-left">
+                <p class="card-text" style="font-weight:600;font-size:0.9em;color:#15183B">Intelliswift congratulates its champion linkedin-certifies recruiters</p>
+                <a class="ref" href="">Read More</a>
               </div>
             </div>
           </div>
-          <div data-aos="flip-up" data-aos-duration="1400" class="col-md-4">
-            <div class="card" style="height: 370px;" >
-              <div class="card-title news-3">
+        </div>
+        <div>
+          <div data-aos="fade-down" data-aos-duration="1000" class="col-md-4 pt-lg-5 pb-lg-5">
+            <div class="card newscard" style="width: 20rem;height: 300px; border-radius: 15px !important; border: 1px solid #e9e9e9;" >
+              <div class="card-title news-3" style="border-top-right-radius: 15px !important; border-top-left-radius: 15px !important">
                 <span class="pl-4" style="color:#fff;font-size:0.9em;line-height:60px;font-weight:500">JUL 15, 2020</span>
               </div>
-              <div class="card-body text-left" style="border:1px solid #E9E9E9">
-                <p class="card-text" style="font-weight:600;font-size:0.9em;color:#15183B">INTELLISWIFT - AMONG THE TOP 5 TECHNOLOGY COMPANIES ON LABJ'S LARGEST MINORITY - OWNED BUSINESS LIST 2020</p>
+              <div class="card-body text-left">
+                <p class="card-text" style="font-weight:600;font-size:0.9em;color:#15183B">Intelliswift - among the top 5 technology companies </p>
+                <a class="ref" href="">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div data-aos="fade-down" data-aos-duration="1000" class="col-md-4 pt-lg-5 pb-lg-5">
+            <div class="card newscard" style="width: 20rem;height: 300px; border-radius: 15px !important; border: 1px solid #e9e9e9;" >
+              <div class="card-title news-1" style="border-top-right-radius: 15px !important; border-top-left-radius: 15px !important">
+                <span class="pl-4" style="color:#fff;font-size:0.9em;line-height:60px;font-weight:500">OCT 28, 2020</span>
+              </div>
+              <div class="card-body text-left">
+                <p class="card-text" style="font-weight:600;font-size:0.9em;color:#15183B">Intelliswift launches cloud adoption navigator framework, 'ICAN'</p>
+                <a class="ref" href="">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div data-aos="fade-down" data-aos-duration="1000" class="col-md-4 pt-lg-5 pb-lg-5">
+            <div class="card newscard" style="width: 20rem;height: 300px; border-radius: 15px !important; border: 1px solid #e9e9e9;" >
+              <div class="card-title news-1" style="border-top-right-radius: 15px !important; border-top-left-radius: 15px !important">
+                <span class="pl-4" style="color:#fff;font-size:0.9em;line-height:60px;font-weight:500">OCT 28, 2020</span>
+              </div>
+              <div class="card-body text-left">
+                <p class="card-text" style="font-weight:600;font-size:0.9em;color:#15183B">Intelliswift launches cloud adoption navigator framework, 'ICAN'</p>
+                <a class="ref" href="">Read More</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+</div>
+    <div class="container" >
+      <div class="row text-center">
+        <div class="col-md-12">
+          <a class="ref" href="">View More</a>
+        </div>
+      </div>
+    </div>
   </section>
+
+  
 
 <!-- Footer-->
 <footer class="page-footer " style=" background-image: linear-gradient(to right, #5091a3,#304a69, #304a69);">
@@ -452,6 +534,38 @@
  
 <!-- Scripts -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+<script>
+  var owl = $('.owl-carousel');
+owl.owlCarousel({
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:2500,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:2,
+        },
+        1100:{
+            items:2,
+            loop:true
+        },
+        1200:{
+            items:3,
+            loop:true
+        }
+    }
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+</script>
 
 <script>
   AOS.init();

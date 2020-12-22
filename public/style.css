@@ -1,6 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+.row.no-pad {
+  margin-right:0;
+  margin-left:0;
+}
+.row.no-pad > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+
+.newscard{
+  -webkit-box-shadow: 8px 8px 6px -6px #000;
+  -moz-box-shadow: 8px 8px 6px -6px #000;
+  box-shadow: 8px 8px 6px -6px #000;
+  border-radius: 15px !important;
+}
+
+.ref{
+  color: #E4AD77;
+}
+
+
+.scroll-txt {
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  width: 200px;
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+}
+
+
+.chev {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.chevron {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 50px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.text {
+  display: block;
+  margin-top: 75px;
+  margin-left: -50px;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: .25;
+  animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+
 header {
   position: relative;
   background-color: black;
@@ -88,6 +211,7 @@ header .overlay {
 
 a.nav-link{
   color: white !important;
+  font-size: 14px !important;
 }
 
 .nav-tabs{
@@ -104,9 +228,9 @@ a.nav-link{
   font-weight: 500 !important;
 }
 
+
 .brandlogo{
-  max-width: 150px !important;
-  min-width: 150px !important;
+  width: 150px;
 }
 
 
@@ -122,12 +246,13 @@ a.nav-link{
 }
 
 .scrolled {
-  background-color: #00000080;
+  background-color: #000000;
   transition: background-color 200ms linear;
   -webkit-box-shadow: 0 8px 6px -6px #000;
   -moz-box-shadow: 0 8px 6px -6px #000;
   box-shadow: 0 8px 6px -6px #000;
-
+  height: auto !important;
+  
 }
 
 .scrolled a.nav-link{
@@ -154,15 +279,18 @@ a.nav-link{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: auto;
+  height: 90vh;
   
+}
+
+.atglancetext{
+ padding: 17% 0% 0% 10%;
 }
 
 .banner{
   position: absolute !important;
   left: 25%;
-  top: 10%;
-  max-width: 500px !important;
+  top: 20%;
 }
 
 .simplifyoverlay{
@@ -275,7 +403,6 @@ a.nav-link{
 }
 .card{
   background-color: transparent !important;
-  border: none !important;
 }
 
 .btn-custom{
@@ -347,6 +474,16 @@ form{
   background-size: cover;
   
 }
+
+.cscard{
+  max-width: 400px !important;
+  height: 250px !important;
+  transition: background-color 200ms linear;
+  -webkit-box-shadow: 0 8px 6px -6px #000;
+  -moz-box-shadow: 0 8px 6px -6px #000;
+  box-shadow: 0 8px 6px -6px #000;
+}
+
 .casestudybg{
   background-image: url("images/casestudybg.png");
   /* height: 70vh;  */
@@ -369,7 +506,7 @@ form{
 }
 .news-1{
     background-image: url("images/NEWS_IMAGE_1.png");
-    height:25vh;
+    height:15vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -377,7 +514,7 @@ form{
 }
 .news-2{
     background-image: url("images/NEWS_IMAGE_2.png");
-    height:25vh;
+    height:15vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -385,7 +522,7 @@ form{
 }
 .news-3{
     background-image: url("images/NEWS_IMAGE_3.png");
-    height:25vh;
+    height:15vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -524,26 +661,21 @@ ul{
 
   .intro{
     background-image: url("images/AT.png");
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 90vh;
     
   }
   
-  .banner{
-    position: absolute !important;
-    left: 15%;
-    top: 15%;
-    max-width: 700px !important;
-  }
-  
-  
 }
 
 
 @media only screen and (max-width: 798px) {
-
+  .w-50{
+    width: 100% !important;
+    margin-left: 0px !important;
+    }
 
   .mobilehide{
     display: none !important;
@@ -554,7 +686,7 @@ ul{
   }
 
   .navbar{
-    background-image: linear-gradient(to right, #5091a3,#304a69, #304a69) !important;
+    background-color: #000 !important;
   }
 
   /* landing section mobile */
